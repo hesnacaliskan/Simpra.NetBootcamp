@@ -1,2 +1,3 @@
 # Simpra.NetBootcamp
-Simpra .Net Bootcamp'i kapsamında yaptığım ödevleri için repodur.
+It is a repo for the assignments I made within the scope of Simpra .Net Bootcamp.
+
