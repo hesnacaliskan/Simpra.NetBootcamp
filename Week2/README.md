@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/iGZu94G3)
 # Hafta 2 Ödevi
 
 Simpra .Net Bootcamp'i kapsamında ikinci haftanın ödevi olarak bizden içerisinde GET,POST,PUT ve DELETE metotları bulunan bir Web API projesi yapmamız istendi. Bu proje Onion Architecture ve Generic Repository Design Pattern kullanılarak tasarlanmıştır. "Staff" adlı entity sınıfı oluşturulmuş, üzerinde CRUD işlemleri gerçekleştirilmiştir. Ek olarak GetWhere() metodu ile name ve country propertyleri üzerinden filtreleme yapılmıştır. Validation yöntemi olarak Fluent Validation tercih edilmiştir. Projenin yapısı aşağıdaki gibidir:
