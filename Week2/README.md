@@ -2,7 +2,8 @@
 
 Simpra .Net Bootcamp'i kapsamında ikinci haftanın ödevi olarak bizden içerisinde GET,POST,PUT ve DELETE metotları bulunan bir Web API projesi yapmamız istendi. Bu proje Onion Architecture ve Generic Repository Design Pattern kullanılarak tasarlanmıştır. "Staff" adlı entity sınıfı oluşturulmuş, üzerinde CRUD işlemleri gerçekleştirilmiştir. Ek olarak GetWhere() metodu ile name ve country propertyleri üzerinden filtreleme yapılmıştır. Validation yöntemi olarak Fluent Validation tercih edilmiştir. Projenin yapısı aşağıdaki gibidir:
 
-![Ekran görüntüsü 2023-05-18 232602](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/ff056c6e-34e4-430d-a091-6df61fce33e8)
+![projeyapısı](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/d7ae0ae0-95d5-4360-936b-9c6bbd84cc02)
+
 
 
 # Projede Kullanınan Teknolojiler
@@ -16,7 +17,7 @@ Simpra .Net Bootcamp'i kapsamında ikinci haftanın ödevi olarak bizden içeris
 
 # Projenin Yapısı
 ## *Onion Architecture*
-![Nedir-Bu-Onion-Architecture](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/62285155-463c-43f7-a522-a2f3940b8303)
+![OnionArchitecture](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/ba228c1d-e172-4e16-a61e-9abc89d01c28)
 
 Görüldüğü üzere Onion Architecture’da katmanlar iç içe dairesel şekilde seyretmektedir. Görüntüsü Onion’a yani Soğan’a benzediği için bu ismi almıştır. Hatta görüntüden ziyade işlevsel açıdan her bir katmanın sadece bir içteki katmana bağımlılık göstermesi gözde soğan anatomisini canlandırdığı için bu şekilde sıfatlandırılmıştır diyebiliriz.
 
@@ -97,19 +98,22 @@ Yukarıdaki görseli detaylandırırsak eğer içten dışa doğru;
 
 Projede veri tabanı ile bağlantı code first yaklaşımı ile yapılmıştır. Buradaki amaç veritabanı arayüzü ile etkileşimi minimize etmektir. Entity framework Code First yaklaşımının en büyük avantajı projedeki modeli tam hakimiyetle istediğimiz şekilde kullanmaktır. Code First yaklaşımım aşağıdaki şekildedir:
 
-![codefirst](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/226087d4-8aee-42e0-84d9-cae2557eb4a7)
+![codefirst](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/fb629049-923f-45ba-9383-ca66e26acafd)
+
 
 ## *Generic Repository Desing Patern*
 
 Bildiğiniz üzere her model için bazı ortak işlemler vardır. Biz bu ortak işlemlere kısaca CRUD (Create, Read, Update, Delete) işlemler diyebiliriz. Kod tekrarına düşmemek adına, tüm modeller için kullanılabilir ortak bir yapı oluşturmalıyız. Generic Repository Design Pattern, “generic” kelimesinden de anlaşılacağı gibi bu “genel” yapıyı oluşturmamızı sağlıyor. Yani, ortak işlemlerimiz için genel bir yapı kurup, her bir modelin bu genel yapı üzerinden o işlemi gerçekleştirmesini sağlıyor. Böylece, kod tekrarlarından kaçınırken, gelecekteki değişiklikler için efor sarfetmemizi gerektirmeyecek bir yapı oluşturulmuş oluyor. Ben projeme aşağıdaki gibi implement ettim: 
 
-![repository](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/3529d84d-e9e4-4623-bb8f-b3583b5fba0a)
+![repository](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/c1f68241-2a39-49c6-966a-37daf55e44e7)
+
 
 ## *Fluent Validation*
 
 FluentValidation bir veri doğrulama kütüphanesidir. FluentValidation ve benzeri ürünlerin kullanılması, verilerin doğru şekilde yani verilerin oluştururken konulmuş kısıtlamaları sağlayarak kurallara uyumlu halde olmasını ve kullanıcı ya da sistem kaynaklı hataların oluşmasını engeller. Bu kütühaneyi proje içerisinde PUT ve POST metodları için aşağıdaki gibi kullandım:
 
-![validation](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/aa998aa0-9e0e-48f4-8884-949fabc84001)
+![validation](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/5c181900-20e1-4455-917d-320ab86a533a)
+
 
 # Nasıl Kurulur?
 1. Öncelikle projeyi klonlamak istediğiniz dosyada terminali açınız ve aşağıdaki kodu yazınız.
@@ -129,7 +133,8 @@ code .
 
 4.  Son olarak veritabanı işlemlerini gerçekleştirebilmek için proje içerisinde "appsettings.json" dosyasında yer alan  connection string'teki "Server" ve "Database" adını kendi server adınız ve belirlediğiniz veritabanı adı ile değiştirmeniz gerekmektedir.
 
-![connectionstring](https://github.com/P259-Simpra-NET-Bootcamp/aw2-hesnacaliskan/assets/56639245/02d5ed6e-a645-4f84-81a4-4959fe3e2c4e)
+![connectionstring](https://github.com/hesnacaliskan/Simpra.NetBootcamp/assets/56639245/c494797d-ce86-4070-ac55-23e7d21d0c64)
+
 
 # Katkı
 
